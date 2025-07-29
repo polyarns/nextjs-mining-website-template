@@ -1,0 +1,55 @@
+/* ---------------------------------------------
+   Medium Screens (Large tablets / Small desktops)
+   Width: 992px to 1199px
+---------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .map {
+    max-width: 250px !important; /* Restrict map width on medium desktops */
+  }
+}
+
+/* ---------------------------------------------
+   Large Screens and Up (Desktops)
+   Width: 992px and above
+---------------------------------------------- */
+@media (min-width: 992px) {
+  .nav-link {
+    padding-top: 0 !important;    /* Remove vertical padding from nav links */
+    padding-bottom: 0 !important;
+  }
+}
+
+/* ---------------------------------------------
+   Small to Medium Screens (Tablets and below)
+   Width: up to 992px
+---------------------------------------------- */
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-brand {
+    padding-top: 0 !important;    /* Remove vertical padding from brand */
+    padding-bottom: 0 !important;
+  }
+
+  /* Offcanvas menu background color */
+  .offcanvas-header,
+  .offcanvas-body {
+    background-color: #1563ab; /* Secondary brand color */
+  }
+
+  .nav-item .nav-link {
+    padding: 0.4rem !important;  /* Compact nav links on smaller screens */
+  }
+}
+
+/* ---------------------------------------------
+   Small Screens (Mobile)
+   Width: up to 768px
+---------------------------------------------- */
+@media (max-width: 768px) {
+  .navbar-clone {
+    top: 0 !important;           /* Fix navbar clone position on mobile */
+  }
+
+  .sticky-wrapper {
+    position: relative !important; /* Reset sticky wrapper position */
+  }
+}
